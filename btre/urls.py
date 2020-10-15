@@ -21,5 +21,6 @@ from django.urls import path, include
 # wenn der erste path leer ist ('') werden quasi die paths von der including urls file 1:1 übernommen
 urlpatterns = [
     path('', include('pages.urls')),
+    path('listings/', include('listings.urls')),
     path('admin/', admin.site.urls),
 ]
